@@ -4,9 +4,9 @@ import UseCounter from './useCounter';
 
 function App() {
   return(
-    <>
+    <section className='main-container'>
       <UseCounter />
-    </>
+    </section>
   )
 }
 

@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import React, { useReducer } from 'react';
 
 //definiing initial state for our initial state value
 const initialState = 0;
@@ -22,12 +22,12 @@ function UseCounter() {
   const [count, dispatch] = useReducer(reducer, initialState); //returns 2 values via array distracturing the current state and disatoch method
 
   return (
-    <>
-      <h3>Counte => {count}</h3>
-      <button onClick={(event) => dispatch('Increment')}>Increment</button>
-      <button onClick={(event) => dispatch('decrement')}>Decrement</button>
-      <button onClick={(event) => dispatch('reset')}>Reset</button>
-    </>
+    <div>
+      <h3 className='counter'>Counter => {count}</h3>
+      <button className='btns'onClick={(event) => dispatch('Increment')}>INCREMENT</button>
+      <button className='btns'onClick={(event) => dispatch('decrement')}>DECREMENT</button>
+      <button className='btns'onClick={(event) => dispatch('reset')}>RESET</button>
+    </div>
   );
 }
 

@@ -7,35 +7,33 @@
 .main-container{
     max-width: 600px;
     width: 100%;
-    margin: 0 auto;
-}
-
-.main-header{
-    background-color: #000;
-    color: #fff;
-}
-
-.car {
-    color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:#2a9d8f;
     border-radius: 10px;
-    border: 2px solid whitesmoke;
-    text-align: center;
-    background: green;
-    padding: 10px;
-    width:150px
-    
-}
-.navigation {
-    margin: 20px 0;
 }
 
-.navigate {
-    background-color: green;
-    color: white;
+.counter{
+    font-size: 2em;
+    padding: 20px;
+    color: #fff;
+
+}
+
+.btns {
+    background-color: #ffb703;
+    color: #fff;
     max-width: 150px;
     text-align: center;
-    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
     margin: 10px;
-    text-decoration: none;
+    border-radius: 10px;
     
 }
+
+.btns:hover {
+    color: #000;
+}
+
