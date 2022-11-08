@@ -1,5 +1,5 @@
 import React from 'react';
-import UseCounter from './useCounter';
+import UseCounter from './Counter';
 
 
 function App() {
