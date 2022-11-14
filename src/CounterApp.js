@@ -1,5 +1,6 @@
 // import React from 'react';
-import useCustomHook from './ReducerCustomHook'
+import { NavLink } from "react-router-dom"
+import useCustomHook from './ReducerHook'
 
 //definiing initial state for our initial state value
 const initialState = 0;
@@ -17,9 +18,9 @@ const reducer = (state, action) => {
       return state;
   }
 };
-
+//defining our counter app logic
 function UseCounter() {
-  //useReducer function takes values, the reducer function and the initial state.
+  //useReducer function takes values, the reducer function and our state.
   const [count, dispatch] = useCustomHook(reducer, initialState); //returns 2 values via array distracturing the current state and disatoch method
 
   return (
@@ -28,6 +29,7 @@ function UseCounter() {
       <button className='btns'onClick={(event) => dispatch('increment')}>INCREMENT</button>
       <button className='btns'onClick={(event) => dispatch('decrement')}>DECREMENT</button>
       <button className='btns'onClick={(event) => dispatch('reset')}>RESET</button>
+      {/* <p><NavLink to='/Blog'><button>Blog</button></NavLink></p> */}
     </div>
   );
 }
