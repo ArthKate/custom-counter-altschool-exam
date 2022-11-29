@@ -4,15 +4,21 @@
     padding: 0px;
 }
 
-.main-container{
+#main-container{
     max-width: 600px;
     width: 100%;
     margin: 50px auto;
     padding: 20px;
     background-color:#2a9d8f;
     border-radius: 10px;
+    border: none;
 }
 
+.counterappII {
+    background-color: #fff;
+    border: none;
+    margin: 50px auto;
+}
 .counter{
     font-size: 2em;
     padding: 20px;
@@ -33,7 +39,23 @@
     
 }
 
+.navbtn {
+    margin: 10px 10px;
+    background-color: #ffb703;
+    color: #fff;
+    max-width: 150px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
 .btns:hover {
+    color: #000;
+}
+
+.navbtn:hover {
     color: #000;
 }
 
